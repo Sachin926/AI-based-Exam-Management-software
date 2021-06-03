@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>record</class>
+ <widget class="QMainWindow" name="record">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>787</width>
+    <height>612</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(212, 255, 248);
+selection-color: rgb(0, 0, 0);
+selection-background-color: rgb(5, 170, 240);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>721</width>
+      <height>531</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Details</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>20</y>
+        <width>301</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Student Details</string>
+      </property>
+      <widget class="QWidget" name="formLayoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>261</width>
+         <height>121</height>
+        </rect>
+       </property>
+       <layout class="QFormLayout" name="formLayout">
+        <item row="0" column="0">
+         <widget class="QLabel" name="nameLabel">
+          <property name="text">
+           <string>Name</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="nameLineEdit"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="rollNoLabel">
+          <property name="text">
+           <string>Roll No.</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="rollNoLineEdit"/>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="branchLabel">
+          <property name="text">
+           <string>Branch</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="branchLineEdit"/>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="semesterLabel">
+          <property name="text">
+           <string>Semester</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLineEdit" name="semesterLineEdit"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>20</y>
+        <width>301</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Exam Details</string>
+      </property>
+      <widget class="QWidget" name="formLayoutWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>251</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <layout class="QFormLayout" name="formLayout_2">
+        <item row="0" column="0">
+         <widget class="QLabel" name="subject1Label">
+          <property name="text">
+           <string>Subject1</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="subject1LineEdit"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="subject2Label">
+          <property name="text">
+           <string>Subject2</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="subject2LineEdit"/>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="subject3Label">
+          <property name="text">
+           <string>Subject3</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="subject3LineEdit"/>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="subject4Label">
+          <property name="text">
+           <string>Subject4</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLineEdit" name="subject4LineEdit"/>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="subject5Label">
+          <property name="text">
+           <string>Subject5</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QLineEdit" name="subject5LineEdit"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_3">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>270</y>
+        <width>611</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Exam Details</string>
+      </property>
+      <widget class="QWidget" name="formLayoutWidget_3">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>571</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <layout class="QFormLayout" name="formLayout_3">
+        <item row="0" column="0">
+         <widget class="QLabel" name="phoneLabel">
+          <property name="text">
+           <string>Phone</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="subject1LineEdit_2"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="address1Label">
+          <property name="text">
+           <string>Address1</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="subject2LineEdit_2"/>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="address2Label">
+          <property name="text">
+           <string>Address2</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="subject3LineEdit_2"/>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="stateLabel">
+          <property name="text">
+           <string>State</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLineEdit" name="subject4LineEdit_2"/>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="districtLabel">
+          <property name="text">
+           <string>District</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QLineEdit" name="subject5LineEdit_2"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="detailsSave">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>460</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(230, 230, 230);</string>
+      </property>
+      <property name="text">
+       <string>Save</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>459</y>
+        <width>481</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Capture Face</string>
+     </attribute>
+     <widget class="QLabel" name="cam">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>20</y>
+        <width>361</width>
+        <height>351</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::WinPanel</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>disable.jpg</pixmap>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="startCam">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>430</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(230, 230, 230);</string>
+      </property>
+      <property name="text">
+       <string>Start</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="camMessage">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>390</y>
+        <width>361</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Start the Webcam</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Genrate QR</string>
+     </attribute>
+     <widget class="QLabel" name="qrCode">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>40</y>
+        <width>321</width>
+        <height>301</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>qr_begin.png</pixmap>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="codeGenerate">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>380</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(230, 230, 230);</string>
+      </property>
+      <property name="text">
+       <string>Generate</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>787</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen"/>
+    <addaction name="actionNew"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionRecord_DataBase"/>
+    <addaction name="actionAbout_Us_2"/>
+   </widget>
+   <widget class="QMenu" name="menuExit">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <addaction name="actionClose_Window"/>
+   </widget>
+   <widget class="QMenu" name="menuExit_2">
+    <property name="title">
+     <string>Exit</string>
+    </property>
+    <addaction name="actionExit"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuExit"/>
+   <addaction name="menuHelp"/>
+   <addaction name="menuExit_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionNew">
+   <property name="text">
+    <string>New</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionAbout_Us">
+   <property name="text">
+    <string>About Us</string>
+   </property>
+  </action>
+  <action name="actionRecord_DataBase">
+   <property name="text">
+    <string>Record DataBase</string>
+   </property>
+  </action>
+  <action name="actionAbout_Us_2">
+   <property name="text">
+    <string>About Us</string>
+   </property>
+  </action>
+  <action name="actionClose_Window">
+   <property name="text">
+    <string>Preferences</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
