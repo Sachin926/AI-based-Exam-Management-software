@@ -1,1 +1,1 @@
-50,Tamil
+40,English

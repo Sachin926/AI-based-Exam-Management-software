@@ -11,7 +11,7 @@ class Ui_welcome(object):
         self.label.setPixmap(QtGui.QPixmap("knit.png"))
         self.label.setAlignment(QtCore.Qt.AlignCenter)
         self.label.setObjectName("label")
-        self.rec = QtWidgets.QPushButton(welcome)
+        self.rec = QtWidgets.QPushButton(welcome, clicked = lambda : self.user_record(welcome))
         self.rec.setGeometry(QtCore.QRect(240, 250, 151, 41))
         self.rec.setStyleSheet("font: 10pt \"MS Shell Dlg 2\";")
         self.rec.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
@@ -24,6 +24,15 @@ class Ui_welcome(object):
 
         self.retranslateUi(welcome)
         QtCore.QMetaObject.connectSlotsByName(welcome)
+
+    def user_record(self, window):
+        window.destroy()
+        import record
+        self.recWin = QtWidgets.QMainWindow()
+        self.ui = record.Ui_recordWin()
+        self.ui.setupUi(self.recWin)
+        self.recWin.show()
+
 
     def admin_login(self, welcome):
         welcome.destroy()
@@ -38,8 +47,6 @@ class Ui_welcome(object):
         welcome.setWindowTitle(_translate("welcome", "WELCOME"))
         self.rec.setText(_translate("welcome", "Record Attendance"))
         self.reg.setText(_translate("welcome", "Register"))
-
-
 
 
 if __name__ == "__main__":
